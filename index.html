@@ -104,26 +104,6 @@
 }
 @media(max-width:680px){.mobile-catalog-link{justify-content:center}.mobile-catalog-link button{width:100%}.mobile-catalog-link span{text-align:center}.goods{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 </style>
-<script>
-window.addEventListener('error', function(event) {
-  var panel = document.getElementById('mobile-error-help');
-  if (panel) {
-    panel.style.display = 'block';
-    var detail = document.getElementById('mobile-error-detail');
-    if (detail) detail.textContent = event.message || 'Ошибка загрузки страницы';
-  }
-});
-window.addEventListener('unhandledrejection', function(event) {
-  var panel = document.getElementById('mobile-error-help');
-  if (panel) panel.style.display = 'block';
-});
-</script>
-<div id="mobile-error-help" style="display:none;position:fixed;inset:auto 12px 12px;z-index:99999;background:#fff9ef;color:#493b2b;border:2px solid #b48c57;border-radius:14px;padding:16px;font:14px/1.5 Arial,sans-serif;box-shadow:0 8px 28px #0003">
-  <strong>Не удалось полностью запустить конструктор.</strong>
-  <div id="mobile-error-detail" style="margin-top:6px;overflow-wrap:anywhere"></div>
-  <p>Сделайте снимок этого сообщения и отправьте его нам — мы исправим ошибку.</p>
-  <button onclick="this.parentNode.style.display='none'" style="padding:8px 14px">Закрыть</button>
-</div>
 </head><body><div class="topline"></div><header><div class="shell nav"><div class="logo">Тепло в коробке<small>мастерская персональных подарков</small></div><span class="navchip">33 настоящих товара · 2026</span></div></header>
 <div class="shell"><section class="hero"><div><span class="eyebrow">Новогодние подарки с душой</span><h1>Соберите своё <em>маленькое чудо</em></h1><p>Выбирайте товары по настоящим фотографиям, подбирайте упаковку и добавляйте личное поздравление. Состав подарка меняется прямо на ваших глазах.</p></div><span class="spark">✧</span></section>
 <div class="layout"><aside class="panel box-side"><div class="pad"><div class="panelhead"><h2>Ваша коробочка</h2><span class="tinychip" id="counter">0 товаров</span></div><div class="subtext">Реальная крафтовая коробка 29 × 19 × 10 см (размер снаружи)</div></div>
